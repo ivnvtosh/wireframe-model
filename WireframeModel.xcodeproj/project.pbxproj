@@ -48,6 +48,8 @@
 		8582B3E9285BEC05000D3E37 /* InvalidNotRectMap.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3E7285BEC05000D3E37 /* InvalidNotRectMap.txt */; };
 		8582B3EA285BEC05000D3E37 /* InvalidNotRectMap.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3E7285BEC05000D3E37 /* InvalidNotRectMap.txt */; };
 		8582B3EC285BEF5C000D3E37 /* CheckMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3EB285BEF5C000D3E37 /* CheckMap.swift */; };
+		85C761F1285D2E40001AF643 /* StructMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C761F0285D2E40001AF643 /* StructMatrix.swift */; };
+		85E80DC0285E06DC00A9FAAC /* StructMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		8582B3E5285BE85D000D3E37 /* PrintMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintMap.swift; sourceTree = SOURCE_ROOT; };
 		8582B3E7285BEC05000D3E37 /* InvalidNotRectMap.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = InvalidNotRectMap.txt; sourceTree = SOURCE_ROOT; };
 		8582B3EB285BEF5C000D3E37 /* CheckMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMap.swift; sourceTree = SOURCE_ROOT; };
+		85C761F0285D2E40001AF643 /* StructMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructMatrix.swift; sourceTree = "<group>"; };
+		85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructMatrixTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		8582B383285B61E7000D3E37 /* WireframeModel */ = {
 			isa = PBXGroup;
 			children = (
+				85C761F0285D2E40001AF643 /* StructMatrix.swift */,
 				8582B3EB285BEF5C000D3E37 /* CheckMap.swift */,
 				8582B3E5285BE85D000D3E37 /* PrintMap.swift */,
 				8582B3B6285B654A000D3E37 /* ParseMap.swift */,
@@ -166,6 +171,7 @@
 		8582B39A285B61E8000D3E37 /* WireframeModelTests */ = {
 			isa = PBXGroup;
 			children = (
+				85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */,
 				8582B3B9285B6BA2000D3E37 /* ParseMapTests.swift */,
 				8582B39B285B61E8000D3E37 /* WireframeModelTests.swift */,
 			);
@@ -370,6 +376,7 @@
 				8582B387285B61E7000D3E37 /* SceneDelegate.swift in Sources */,
 				8582B3EC285BEF5C000D3E37 /* CheckMap.swift in Sources */,
 				8582B3B7285B654A000D3E37 /* ParseMap.swift in Sources */,
+				85C761F1285D2E40001AF643 /* StructMatrix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8582B3BA285B6BA2000D3E37 /* ParseMapTests.swift in Sources */,
+				85E80DC0285E06DC00A9FAAC /* StructMatrixTests.swift in Sources */,
 				8582B39C285B61E8000D3E37 /* WireframeModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

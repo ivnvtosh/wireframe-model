@@ -38,6 +38,9 @@ class Map {
 		self.size = size
 	}
 
+	init() {
+		
+	}
 
 }
 

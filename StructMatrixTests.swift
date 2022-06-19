@@ -21,39 +21,6 @@ final class MatrixTests: XCTestCase {
 		XCTAssertEqual(a, b)
 	}
 
-	func testGeneralScale() {
-		var a = Matrix()
-		let b = Matrix(matrix: matrix_float4x4([simd_float4(0, 0, 0,  0),
-												simd_float4(0, 0, 0,  0),
-												simd_float4(0, 0, 0,  0),
-												simd_float4(0, 0, 0, 10)]))
-
-		a.generalScale(s: 10)
-		XCTAssertEqual(a, b)
-	}
-
-	func testScale() {
-		var a = Matrix()
-		let b = Matrix(matrix: matrix_float4x4([simd_float4(10,  0,  0, 0),
-												simd_float4( 0, 10,  0, 0),
-												simd_float4( 0,  0, 10, 0),
-												simd_float4( 0,  0,  0, 1)]))
-
-		a.scale(sx: 10, sy: 10, sz: 10)
-		XCTAssertEqual(a, b)
-	}
-
-	func testTransfer() {
-		var a = Matrix()
-		let b = Matrix(matrix: matrix_float4x4([simd_float4( 1,  0,  0, 0),
-												simd_float4( 0,  1,  0, 0),
-												simd_float4( 0,  0,  1, 0),
-												simd_float4(10, 10, 10, 1)]))
-
-		a.transfer(dx: 10, dy: 10, dz: 10)
-		XCTAssertEqual(a, b)
-	}
-
 	func testRotateX() {
 		var a = Matrix()
 		let b = Matrix(matrix: matrix_float4x4([simd_float4(1,         0,         0, 0),
@@ -128,6 +95,206 @@ final class MatrixTests: XCTestCase {
 												simd_float4(         0,          0,        0, 1)]))
 
 		a.rotate(x: 30, y: 30, z: 30)
+		XCTAssertEqual(a, b)
+	}
+
+	func testRotateAngle() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(      0.75,   0.649519,   -0.125, 0),
+												simd_float4(-0.4330127,      0.625, 0.649519, 0),
+												simd_float4(       0.5, -0.4330127,     0.75, 0),
+												simd_float4(         0,          0,        0, 1)]))
+		let angle = Scene.Angle(x: 30, y: 30, z: 30)
+
+		a.rotate(angle: angle)
+		XCTAssertEqual(a, b)
+	}
+
+	func testScaleX() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(10, 0, 0, 0),
+												simd_float4( 0, 1, 0, 0),
+												simd_float4( 0, 0, 1, 0),
+												simd_float4( 0, 0, 0, 1)]))
+
+		a.scale(sx: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testScaleY() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(1,  0, 0, 0),
+												simd_float4(0, 10, 0, 0),
+												simd_float4(0,  0, 1, 0),
+												simd_float4(0,  0, 0, 1)]))
+
+		a.scale(sy: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testScaleZ() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(1, 0,  0, 0),
+												simd_float4(0, 1,  0, 0),
+												simd_float4(0, 0, 10, 0),
+												simd_float4(0, 0,  0, 1)]))
+
+		a.scale(sz: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testScaleXY() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(10,  0, 0, 0),
+												simd_float4( 0, 10, 0, 0),
+												simd_float4( 0,  0, 1, 0),
+												simd_float4( 0,  0, 0, 1)]))
+
+		a.scale(sx: 10, sy: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testScaleXZ() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(10, 0,  0, 0),
+												simd_float4( 0, 1,  0, 0),
+												simd_float4( 0, 0, 10, 0),
+												simd_float4( 0, 0,  0, 1)]))
+
+		a.scale(sx: 10, sz: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testScaleYZ() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(1,  0,  0, 0),
+												simd_float4(0, 10,  0, 0),
+												simd_float4(0,  0, 10, 0),
+												simd_float4(0,  0,  0, 1)]))
+
+		a.scale(sy: 10, sz: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testScaleXYZ() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(10,  0,  0, 0),
+												simd_float4( 0, 10,  0, 0),
+												simd_float4( 0,  0, 10, 0),
+												simd_float4( 0,  0,  0, 1)]))
+
+		a.scale(sx: 10, sy: 10, sz: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testScaleS() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(10,  0,  0, 0),
+												simd_float4( 0, 10,  0, 0),
+												simd_float4( 0,  0, 10, 0),
+												simd_float4( 0,  0,  0, 1)]))
+
+		a.scale(s: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testGeneralScale() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(1, 0, 0,  0),
+												simd_float4(0, 1, 0,  0),
+												simd_float4(0, 0, 1,  0),
+												simd_float4(0, 0, 0, 10)]))
+
+		a.generalScale(s: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testTransferX() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4( 1, 0, 0, 0),
+												simd_float4( 0, 1, 0, 0),
+												simd_float4( 0, 0, 1, 0),
+												simd_float4(10, 0, 0, 1)]))
+
+		a.transfer(dx: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testTransferY() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(1,  0, 0, 0),
+												simd_float4(0,  1, 0, 0),
+												simd_float4(0,  0, 1, 0),
+												simd_float4(0, 10, 0, 1)]))
+
+		a.transfer(dy: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testTransferZ() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(1, 0,  0, 0),
+												simd_float4(0, 1,  0, 0),
+												simd_float4(0, 0,  1, 0),
+												simd_float4(0, 0, 10, 1)]))
+
+		a.transfer(dz: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testTransferXY() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4( 1,  0, 0, 0),
+												simd_float4( 0,  1, 0, 0),
+												simd_float4( 0,  0, 1, 0),
+												simd_float4(10, 10, 0, 1)]))
+
+		a.transfer(dx: 10, dy: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testTransferXZ() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4( 1, 0,  0, 0),
+												simd_float4( 0, 1,  0, 0),
+												simd_float4( 0, 0,  1, 0),
+												simd_float4(10, 0, 10, 1)]))
+
+		a.transfer(dx: 10, dz: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testTransferYZ() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(1, 0,  0, 0),
+												simd_float4(0, 1,  0, 0),
+												simd_float4(0, 0,  1, 0),
+												simd_float4(0, 10, 10, 1)]))
+
+		a.transfer(dy: 10, dz: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testTransferXYZ() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4( 1,  0,  0, 0),
+												simd_float4( 0,  1,  0, 0),
+												simd_float4( 0,  0,  1, 0),
+												simd_float4(10, 10, 10, 1)]))
+
+		a.transfer(dx: 10, dy: 10, dz: 10)
+		XCTAssertEqual(a, b)
+	}
+
+	func testTransferOffset() {
+		var a = Matrix()
+		let b = Matrix(matrix: matrix_float4x4([simd_float4( 1,  0,  0, 0),
+												simd_float4( 0,  1,  0, 0),
+												simd_float4( 0,  0,  1, 0),
+												simd_float4(10, 10, 10, 1)]))
+
+		let offset = Scene.Offset(x: 10, y: 10, z: 10)
+		a.transfer(offset: offset)
 		XCTAssertEqual(a, b)
 	}
 

@@ -23,6 +23,11 @@ class ViewController: UIViewController {
 		map.printHeight()
 		map.printSize()
 
+		scene = Scene(map: map, rect: self.view.bounds)
+
+		let canvas = UICanvasView(frame: self.view.bounds)
+		self.view.addSubview(canvas)
+
 		// Do any additional setup after loading the view.
 	}
 

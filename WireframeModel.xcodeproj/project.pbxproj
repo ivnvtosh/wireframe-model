@@ -50,6 +50,7 @@
 		8582B3EC285BEF5C000D3E37 /* CheckMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3EB285BEF5C000D3E37 /* CheckMap.swift */; };
 		85B8BE4A285E311C006163FF /* StructScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE49285E311C006163FF /* StructScene.swift */; };
 		85B8BE4C285E3A27006163FF /* UICanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE4B285E3A27006163FF /* UICanvasView.swift */; };
+		85B8BE4E285F31B1006163FF /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE4D285F31B1006163FF /* GestureControl.swift */; };
 		85C761F1285D2E40001AF643 /* StructMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C761F0285D2E40001AF643 /* StructMatrix.swift */; };
 		85E80DC0285E06DC00A9FAAC /* StructMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */; };
 /* End PBXBuildFile section */
@@ -102,6 +103,7 @@
 		8582B3EB285BEF5C000D3E37 /* CheckMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMap.swift; sourceTree = SOURCE_ROOT; };
 		85B8BE49285E311C006163FF /* StructScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructScene.swift; sourceTree = SOURCE_ROOT; };
 		85B8BE4B285E3A27006163FF /* UICanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICanvasView.swift; sourceTree = SOURCE_ROOT; };
+		85B8BE4D285F31B1006163FF /* GestureControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureControl.swift; sourceTree = SOURCE_ROOT; };
 		85C761F0285D2E40001AF643 /* StructMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructMatrix.swift; sourceTree = "<group>"; };
 		85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructMatrixTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -156,6 +158,7 @@
 		8582B383285B61E7000D3E37 /* WireframeModel */ = {
 			isa = PBXGroup;
 			children = (
+				85B8BE4D285F31B1006163FF /* GestureControl.swift */,
 				85B8BE4B285E3A27006163FF /* UICanvasView.swift */,
 				85B8BE49285E311C006163FF /* StructScene.swift */,
 				85C761F0285D2E40001AF643 /* StructMatrix.swift */,
@@ -383,6 +386,7 @@
 				8582B385285B61E7000D3E37 /* AppDelegate.swift in Sources */,
 				8582B387285B61E7000D3E37 /* SceneDelegate.swift in Sources */,
 				8582B3EC285BEF5C000D3E37 /* CheckMap.swift in Sources */,
+				85B8BE4E285F31B1006163FF /* GestureControl.swift in Sources */,
 				8582B3B7285B654A000D3E37 /* ParseMap.swift in Sources */,
 				85C761F1285D2E40001AF643 /* StructMatrix.swift in Sources */,
 			);

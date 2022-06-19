@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	var canvas: UICanvasView!
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -25,8 +27,10 @@ class ViewController: UIViewController {
 
 		scene = Scene(map: map, rect: self.view.bounds)
 
-		let canvas = UICanvasView(frame: self.view.bounds)
+		canvas = UICanvasView(frame: self.view.bounds)
 		self.view.addSubview(canvas)
+
+		gestureControl()
 
 		// Do any additional setup after loading the view.
 	}

@@ -65,9 +65,9 @@ struct Matrix {
 	}
 
 	mutating func rotate(x: Float, y: Float, z: Float) {
+		rotate(z: z)
 		rotate(x: x)
 		rotate(y: y)
-		rotate(z: z)
 	}
 
 	mutating func rotate(angle: Scene.Angle) {

@@ -11,6 +11,10 @@ class ViewController: UIViewController {
 
 	var canvas: UICanvasView!
 
+	@IBOutlet weak var labelAngle: UILabel!
+	@IBOutlet weak var labelOffset: UILabel!
+	@IBOutlet weak var labelScale: UILabel!
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -29,6 +33,8 @@ class ViewController: UIViewController {
 
 		canvas = UICanvasView(frame: self.view.bounds)
 		self.view.addSubview(canvas)
+
+		dataDisplay(angle: labelAngle, offset: labelOffset, scale: labelScale)
 
 		gestureControl()
 

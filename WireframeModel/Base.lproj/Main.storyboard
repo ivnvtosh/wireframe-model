@@ -15,13 +15,55 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIa-3e-pzt">
+                                <rect key="frame" x="93" y="44" width="228" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="crQ-IG-NE4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjI-cI-1I9">
+                                <rect key="frame" x="93" y="102" width="228" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="lbW-fG-L9o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfT-If-BiI">
+                                <rect key="frame" x="93" y="73" width="228" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="e7e-Ei-K22"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OjI-cI-1I9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1rZ-s7-Ryu"/>
+                            <constraint firstItem="eIa-3e-pzt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NzZ-TB-zGH"/>
+                            <constraint firstItem="eIa-3e-pzt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Wc6-GH-5b6"/>
+                            <constraint firstItem="HfT-If-BiI" firstAttribute="top" secondItem="eIa-3e-pzt" secondAttribute="bottom" constant="8" symbolic="YES" id="dQE-CA-6VR"/>
+                            <constraint firstItem="HfT-If-BiI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="n4P-Wa-Cg4"/>
+                            <constraint firstItem="OjI-cI-1I9" firstAttribute="top" secondItem="HfT-If-BiI" secondAttribute="bottom" constant="8" symbolic="YES" id="zeW-WI-asR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelAngle" destination="eIa-3e-pzt" id="w2M-eM-iKT"/>
+                        <outlet property="labelOffset" destination="HfT-If-BiI" id="55p-PP-yTf"/>
+                        <outlet property="labelScale" destination="OjI-cI-1I9" id="D01-KN-x38"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="65"/>
+            <point key="canvasLocation" x="128.98550724637681" y="64.955357142857139"/>
         </scene>
     </scenes>
     <resources>

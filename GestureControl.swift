@@ -55,6 +55,7 @@ extension ViewController {
 			scene.angle.y = 360
 		}
 
+		dataDisplay(angle: labelAngle)
 		canvas.setNeedsDisplay()
 	}
 
@@ -73,6 +74,7 @@ extension ViewController {
 			scene.angle.z = 360
 		}
 
+		dataDisplay(angle: labelAngle)
 		canvas.setNeedsDisplay()
 	}
 
@@ -91,6 +93,7 @@ extension ViewController {
 			scene.zoom = 10
 		}
 
+		dataDisplay(scale: labelScale)
 		canvas.setNeedsDisplay()
 	}
 
@@ -102,6 +105,7 @@ extension ViewController {
 		scene.offset.x += Float(sender.velocity(in: canvas).x) / 60
 		scene.offset.y += Float(sender.velocity(in: canvas).y) / 60
 
+		dataDisplay(offset: labelOffset)
 		canvas.setNeedsDisplay()
 	}
 
@@ -119,6 +123,7 @@ extension ViewController {
 
 		scene.zoom = 15
 
+		dataDisplay(angle: labelAngle, offset: labelOffset, scale: labelScale)
 		canvas.setNeedsDisplay()
 	}
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85115E02285F4D4E003805C4 /* DataDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85115E01285F4D4E003805C4 /* DataDisplay.swift */; };
 		8582B385285B61E7000D3E37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B384285B61E7000D3E37 /* AppDelegate.swift */; };
 		8582B387285B61E7000D3E37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B386285B61E7000D3E37 /* SceneDelegate.swift */; };
 		8582B389285B61E7000D3E37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B388285B61E7000D3E37 /* ViewController.swift */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85115E01285F4D4E003805C4 /* DataDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDisplay.swift; sourceTree = SOURCE_ROOT; };
 		8582B381285B61E7000D3E37 /* WireframeModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WireframeModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8582B384285B61E7000D3E37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8582B386285B61E7000D3E37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		8582B383285B61E7000D3E37 /* WireframeModel */ = {
 			isa = PBXGroup;
 			children = (
+				85115E01285F4D4E003805C4 /* DataDisplay.swift */,
 				85B8BE4D285F31B1006163FF /* GestureControl.swift */,
 				85B8BE4B285E3A27006163FF /* UICanvasView.swift */,
 				85B8BE49285E311C006163FF /* StructScene.swift */,
@@ -378,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85115E02285F4D4E003805C4 /* DataDisplay.swift in Sources */,
 				85B8BE4C285E3A27006163FF /* UICanvasView.swift in Sources */,
 				8582B389285B61E7000D3E37 /* ViewController.swift in Sources */,
 				85B8BE4A285E311C006163FF /* StructScene.swift in Sources */,

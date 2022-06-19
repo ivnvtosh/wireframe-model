@@ -53,6 +53,33 @@
 		85B8BE4C285E3A27006163FF /* UICanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE4B285E3A27006163FF /* UICanvasView.swift */; };
 		85B8BE4E285F31B1006163FF /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE4D285F31B1006163FF /* GestureControl.swift */; };
 		85C761F1285D2E40001AF643 /* StructMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C761F0285D2E40001AF643 /* StructMatrix.swift */; };
+		85D18019285F61C900B12504 /* DataDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85115E01285F4D4E003805C4 /* DataDisplay.swift */; };
+		85D1801A285F61C900B12504 /* DataDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85115E01285F4D4E003805C4 /* DataDisplay.swift */; };
+		85D1801B285F61CB00B12504 /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE4D285F31B1006163FF /* GestureControl.swift */; };
+		85D1801C285F61CC00B12504 /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE4D285F31B1006163FF /* GestureControl.swift */; };
+		85D1801D285F61CE00B12504 /* UICanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE4B285E3A27006163FF /* UICanvasView.swift */; };
+		85D1801E285F61CE00B12504 /* UICanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE4B285E3A27006163FF /* UICanvasView.swift */; };
+		85D1801F285F61D100B12504 /* StructScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE49285E311C006163FF /* StructScene.swift */; };
+		85D18020285F61D200B12504 /* StructScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B8BE49285E311C006163FF /* StructScene.swift */; };
+		85D18021285F61D500B12504 /* StructMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C761F0285D2E40001AF643 /* StructMatrix.swift */; };
+		85D18022285F61D500B12504 /* StructMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C761F0285D2E40001AF643 /* StructMatrix.swift */; };
+		85D18023285F61D700B12504 /* CheckMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3EB285BEF5C000D3E37 /* CheckMap.swift */; };
+		85D18024285F61D800B12504 /* CheckMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3EB285BEF5C000D3E37 /* CheckMap.swift */; };
+		85D18025285F61DA00B12504 /* PrintMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3E5285BE85D000D3E37 /* PrintMap.swift */; };
+		85D18026285F61DA00B12504 /* PrintMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3E5285BE85D000D3E37 /* PrintMap.swift */; };
+		85D18027285F61DD00B12504 /* ParseMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3B6285B654A000D3E37 /* ParseMap.swift */; };
+		85D18028285F61DD00B12504 /* ParseMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3B6285B654A000D3E37 /* ParseMap.swift */; };
+		85D18029285F61E000B12504 /* ClassMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3B4285B62DC000D3E37 /* ClassMap.swift */; };
+		85D1802A285F61E100B12504 /* ClassMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3B4285B62DC000D3E37 /* ClassMap.swift */; };
+		85D1802B285F61E300B12504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B384285B61E7000D3E37 /* AppDelegate.swift */; };
+		85D1802C285F61E300B12504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B384285B61E7000D3E37 /* AppDelegate.swift */; };
+		85D1802D285F61E500B12504 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B386285B61E7000D3E37 /* SceneDelegate.swift */; };
+		85D1802E285F61E500B12504 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B386285B61E7000D3E37 /* SceneDelegate.swift */; };
+		85D1802F285F61E700B12504 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B388285B61E7000D3E37 /* ViewController.swift */; };
+		85D18030285F61E700B12504 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B388285B61E7000D3E37 /* ViewController.swift */; };
+		85D18031285F61F600B12504 /* FileEmpty.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3BD285BB0A7000D3E37 /* FileEmpty.txt */; };
+		85D18032285F620000B12504 /* Hemisphere.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3B8285B65D8000D3E37 /* Hemisphere.txt */; };
+		85D18033285F620100B12504 /* Hemisphere.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3B8285B65D8000D3E37 /* Hemisphere.txt */; };
 		85E80DC0285E06DC00A9FAAC /* StructMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +101,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		85115E01285F4D4E003805C4 /* DataDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDisplay.swift; sourceTree = SOURCE_ROOT; };
+		85115E01285F4D4E003805C4 /* DataDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataDisplay.swift; path = WireframeModel/DataDisplay.swift; sourceTree = SOURCE_ROOT; };
 		8582B381285B61E7000D3E37 /* WireframeModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WireframeModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8582B384285B61E7000D3E37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8582B386285B61E7000D3E37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,25 +116,25 @@
 		8582B3A5285B61E8000D3E37 /* WireframeModelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeModelUITests.swift; sourceTree = "<group>"; };
 		8582B3A7285B61E8000D3E37 /* WireframeModelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeModelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8582B3B4285B62DC000D3E37 /* ClassMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMap.swift; sourceTree = "<group>"; };
-		8582B3B6285B654A000D3E37 /* ParseMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseMap.swift; sourceTree = SOURCE_ROOT; };
+		8582B3B6285B654A000D3E37 /* ParseMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ParseMap.swift; path = WireframeModel/ParseMap.swift; sourceTree = SOURCE_ROOT; };
 		8582B3B8285B65D8000D3E37 /* Hemisphere.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = Hemisphere.txt; path = Maps/Hemisphere.txt; sourceTree = SOURCE_ROOT; };
-		8582B3B9285B6BA2000D3E37 /* ParseMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseMapTests.swift; sourceTree = SOURCE_ROOT; };
+		8582B3B9285B6BA2000D3E37 /* ParseMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ParseMapTests.swift; path = WireframeModelTests/ParseMapTests.swift; sourceTree = SOURCE_ROOT; };
 		8582B3BD285BB0A7000D3E37 /* FileEmpty.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = FileEmpty.txt; sourceTree = "<group>"; };
 		8582B3C1285BB787000D3E37 /* OnlySpaces.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OnlySpaces.txt; sourceTree = "<group>"; };
 		8582B3C5285BBB35000D3E37 /* InvalidPoint.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = InvalidPoint.txt; sourceTree = "<group>"; };
 		8582B3C9285BC32C000D3E37 /* Plane.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Plane.txt; sourceTree = "<group>"; };
 		8582B3D5285BC749000D3E37 /* Tetrahedron.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tetrahedron.txt; sourceTree = "<group>"; };
 		8582B3D9285BD34A000D3E37 /* InvalidPlane.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = InvalidPlane.txt; sourceTree = "<group>"; };
-		8582B3DD285BDB71000D3E37 /* InvalidMap.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = InvalidMap.txt; sourceTree = SOURCE_ROOT; };
+		8582B3DD285BDB71000D3E37 /* InvalidMap.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = InvalidMap.txt; path = MapsTests/InvalidMap.txt; sourceTree = SOURCE_ROOT; };
 		8582B3E1285BDD30000D3E37 /* Box.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Box.txt; sourceTree = "<group>"; };
-		8582B3E5285BE85D000D3E37 /* PrintMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintMap.swift; sourceTree = SOURCE_ROOT; };
-		8582B3E7285BEC05000D3E37 /* InvalidNotRectMap.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = InvalidNotRectMap.txt; sourceTree = SOURCE_ROOT; };
-		8582B3EB285BEF5C000D3E37 /* CheckMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMap.swift; sourceTree = SOURCE_ROOT; };
-		85B8BE49285E311C006163FF /* StructScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructScene.swift; sourceTree = SOURCE_ROOT; };
-		85B8BE4B285E3A27006163FF /* UICanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICanvasView.swift; sourceTree = SOURCE_ROOT; };
-		85B8BE4D285F31B1006163FF /* GestureControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureControl.swift; sourceTree = SOURCE_ROOT; };
+		8582B3E5285BE85D000D3E37 /* PrintMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PrintMap.swift; path = WireframeModel/PrintMap.swift; sourceTree = SOURCE_ROOT; };
+		8582B3E7285BEC05000D3E37 /* InvalidNotRectMap.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = InvalidNotRectMap.txt; path = MapsTests/InvalidNotRectMap.txt; sourceTree = SOURCE_ROOT; };
+		8582B3EB285BEF5C000D3E37 /* CheckMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CheckMap.swift; path = WireframeModel/CheckMap.swift; sourceTree = SOURCE_ROOT; };
+		85B8BE49285E311C006163FF /* StructScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StructScene.swift; path = WireframeModel/StructScene.swift; sourceTree = SOURCE_ROOT; };
+		85B8BE4B285E3A27006163FF /* UICanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UICanvasView.swift; path = WireframeModel/UICanvasView.swift; sourceTree = SOURCE_ROOT; };
+		85B8BE4D285F31B1006163FF /* GestureControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GestureControl.swift; path = WireframeModel/GestureControl.swift; sourceTree = SOURCE_ROOT; };
 		85C761F0285D2E40001AF643 /* StructMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructMatrix.swift; sourceTree = "<group>"; };
-		85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructMatrixTests.swift; sourceTree = SOURCE_ROOT; };
+		85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StructMatrixTests.swift; path = WireframeModelTests/StructMatrixTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +189,6 @@
 			children = (
 				85115E01285F4D4E003805C4 /* DataDisplay.swift */,
 				85B8BE4D285F31B1006163FF /* GestureControl.swift */,
-				85B8BE4B285E3A27006163FF /* UICanvasView.swift */,
 				85B8BE49285E311C006163FF /* StructScene.swift */,
 				85C761F0285D2E40001AF643 /* StructMatrix.swift */,
 				8582B3EB285BEF5C000D3E37 /* CheckMap.swift */,
@@ -171,10 +197,11 @@
 				8582B3B4285B62DC000D3E37 /* ClassMap.swift */,
 				8582B384285B61E7000D3E37 /* AppDelegate.swift */,
 				8582B386285B61E7000D3E37 /* SceneDelegate.swift */,
+				85B8BE4B285E3A27006163FF /* UICanvasView.swift */,
 				8582B388285B61E7000D3E37 /* ViewController.swift */,
 				8582B38A285B61E7000D3E37 /* Main.storyboard */,
-				8582B38D285B61E7000D3E37 /* Assets.xcassets */,
 				8582B38F285B61E7000D3E37 /* LaunchScreen.storyboard */,
+				8582B38D285B61E7000D3E37 /* Assets.xcassets */,
 				8582B392285B61E7000D3E37 /* Info.plist */,
 			);
 			path = WireframeModel;
@@ -349,6 +376,7 @@
 			files = (
 				8582B3E3285BDD30000D3E37 /* Box.txt in Resources */,
 				8582B3CB285BC32C000D3E37 /* Plane.txt in Resources */,
+				85D18032285F620000B12504 /* Hemisphere.txt in Resources */,
 				8582B3D7285BC749000D3E37 /* Tetrahedron.txt in Resources */,
 				8582B3DF285BDB71000D3E37 /* InvalidMap.txt in Resources */,
 				8582B3E9285BEC05000D3E37 /* InvalidNotRectMap.txt in Resources */,
@@ -365,8 +393,10 @@
 			files = (
 				8582B3CC285BC32C000D3E37 /* Plane.txt in Resources */,
 				8582B3E0285BDB71000D3E37 /* InvalidMap.txt in Resources */,
+				85D18033285F620100B12504 /* Hemisphere.txt in Resources */,
 				8582B3DC285BD34A000D3E37 /* InvalidPlane.txt in Resources */,
 				8582B3EA285BEC05000D3E37 /* InvalidNotRectMap.txt in Resources */,
+				85D18031285F61F600B12504 /* FileEmpty.txt in Resources */,
 				8582B3C8285BBB35000D3E37 /* InvalidPoint.txt in Resources */,
 				8582B3D8285BC749000D3E37 /* Tetrahedron.txt in Resources */,
 				8582B3E4285BDD30000D3E37 /* Box.txt in Resources */,
@@ -400,9 +430,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D1802F285F61E700B12504 /* ViewController.swift in Sources */,
+				85D1801D285F61CE00B12504 /* UICanvasView.swift in Sources */,
+				85D1802D285F61E500B12504 /* SceneDelegate.swift in Sources */,
+				85D18019285F61C900B12504 /* DataDisplay.swift in Sources */,
 				8582B3BA285B6BA2000D3E37 /* ParseMapTests.swift in Sources */,
+				85D1801B285F61CB00B12504 /* GestureControl.swift in Sources */,
+				85D18023285F61D700B12504 /* CheckMap.swift in Sources */,
+				85D18029285F61E000B12504 /* ClassMap.swift in Sources */,
+				85D1801F285F61D100B12504 /* StructScene.swift in Sources */,
+				85D18025285F61DA00B12504 /* PrintMap.swift in Sources */,
+				85D1802B285F61E300B12504 /* AppDelegate.swift in Sources */,
 				85E80DC0285E06DC00A9FAAC /* StructMatrixTests.swift in Sources */,
 				8582B39C285B61E8000D3E37 /* WireframeModelTests.swift in Sources */,
+				85D18027285F61DD00B12504 /* ParseMap.swift in Sources */,
+				85D18021285F61D500B12504 /* StructMatrix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,8 +452,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D1802C285F61E300B12504 /* AppDelegate.swift in Sources */,
+				85D1801E285F61CE00B12504 /* UICanvasView.swift in Sources */,
+				85D18020285F61D200B12504 /* StructScene.swift in Sources */,
+				85D18026285F61DA00B12504 /* PrintMap.swift in Sources */,
+				85D18030285F61E700B12504 /* ViewController.swift in Sources */,
+				85D1801A285F61C900B12504 /* DataDisplay.swift in Sources */,
+				85D18028285F61DD00B12504 /* ParseMap.swift in Sources */,
 				8582B3A6285B61E8000D3E37 /* WireframeModelUITests.swift in Sources */,
+				85D18022285F61D500B12504 /* StructMatrix.swift in Sources */,
+				85D1802E285F61E500B12504 /* SceneDelegate.swift in Sources */,
+				85D18024285F61D800B12504 /* CheckMap.swift in Sources */,
+				85D1802A285F61E100B12504 /* ClassMap.swift in Sources */,
 				8582B3A8285B61E8000D3E37 /* WireframeModelUITestsLaunchTests.swift in Sources */,
+				85D1801C285F61CC00B12504 /* GestureControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

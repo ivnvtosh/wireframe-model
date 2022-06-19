@@ -9,6 +9,21 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="AOX-9A-YxM">
+            <objects>
+                <viewController id="W6P-QR-qow" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3cc-Wh-QbE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qJu-oY-5kK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6j-lr-sq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-839" y="55"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WireframeModel" customModuleProvider="target" sceneMemberID="viewController">

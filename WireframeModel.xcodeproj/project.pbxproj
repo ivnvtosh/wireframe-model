@@ -20,7 +20,7 @@
 		8582B3B5285B62DC000D3E37 /* ClassMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3B4285B62DC000D3E37 /* ClassMap.swift */; };
 		8582B3B7285B654A000D3E37 /* ParseMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3B6285B654A000D3E37 /* ParseMap.swift */; };
 		8582B3BA285B6BA2000D3E37 /* ParseMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B3B9285B6BA2000D3E37 /* ParseMapTests.swift */; };
-		8582B3BB285BA25C000D3E37 /* Hemisphere.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3B8285B65D8000D3E37 /* Hemisphere.txt */; };
+		8582B3BB285BA25C000D3E37 /* Volcano.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3B8285B65D8000D3E37 /* Volcano.txt */; };
 		8582B3BE285BB0A7000D3E37 /* FileEmpty.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3BD285BB0A7000D3E37 /* FileEmpty.txt */; };
 		8582B3C0285BB26E000D3E37 /* FileEmpty.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3BD285BB0A7000D3E37 /* FileEmpty.txt */; };
 		8582B3C2285BB787000D3E37 /* OnlySpaces.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3C1285BB787000D3E37 /* OnlySpaces.txt */; };
@@ -78,8 +78,17 @@
 		85D1802F285F61E700B12504 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B388285B61E7000D3E37 /* ViewController.swift */; };
 		85D18030285F61E700B12504 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582B388285B61E7000D3E37 /* ViewController.swift */; };
 		85D18031285F61F600B12504 /* FileEmpty.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3BD285BB0A7000D3E37 /* FileEmpty.txt */; };
-		85D18032285F620000B12504 /* Hemisphere.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3B8285B65D8000D3E37 /* Hemisphere.txt */; };
-		85D18033285F620100B12504 /* Hemisphere.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3B8285B65D8000D3E37 /* Hemisphere.txt */; };
+		85D18032285F620000B12504 /* Volcano.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3B8285B65D8000D3E37 /* Volcano.txt */; };
+		85D18033285F620100B12504 /* Volcano.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8582B3B8285B65D8000D3E37 /* Volcano.txt */; };
+		85D18035285F7C0400B12504 /* Castle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D18034285F7C0400B12504 /* Castle.txt */; };
+		85D18036285F7C0400B12504 /* Castle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D18034285F7C0400B12504 /* Castle.txt */; };
+		85D18037285F7C0400B12504 /* Castle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D18034285F7C0400B12504 /* Castle.txt */; };
+		85D18039285F894900B12504 /* Thing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D18038285F894900B12504 /* Thing.txt */; };
+		85D1803A285F894900B12504 /* Thing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D18038285F894900B12504 /* Thing.txt */; };
+		85D1803B285F894900B12504 /* Thing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D18038285F894900B12504 /* Thing.txt */; };
+		85D1803E285F8EA100B12504 /* Lol.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D1803D285F8EA100B12504 /* Lol.txt */; };
+		85D1803F285F8EA100B12504 /* Lol.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D1803D285F8EA100B12504 /* Lol.txt */; };
+		85D18040285F8EA100B12504 /* Lol.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D1803D285F8EA100B12504 /* Lol.txt */; };
 		85E80DC0285E06DC00A9FAAC /* StructMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,7 +126,7 @@
 		8582B3A7285B61E8000D3E37 /* WireframeModelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeModelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8582B3B4285B62DC000D3E37 /* ClassMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassMap.swift; sourceTree = "<group>"; };
 		8582B3B6285B654A000D3E37 /* ParseMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ParseMap.swift; path = WireframeModel/ParseMap.swift; sourceTree = SOURCE_ROOT; };
-		8582B3B8285B65D8000D3E37 /* Hemisphere.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = Hemisphere.txt; path = Maps/Hemisphere.txt; sourceTree = SOURCE_ROOT; };
+		8582B3B8285B65D8000D3E37 /* Volcano.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = Volcano.txt; path = Maps/Volcano.txt; sourceTree = SOURCE_ROOT; };
 		8582B3B9285B6BA2000D3E37 /* ParseMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ParseMapTests.swift; path = WireframeModelTests/ParseMapTests.swift; sourceTree = SOURCE_ROOT; };
 		8582B3BD285BB0A7000D3E37 /* FileEmpty.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = FileEmpty.txt; sourceTree = "<group>"; };
 		8582B3C1285BB787000D3E37 /* OnlySpaces.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OnlySpaces.txt; sourceTree = "<group>"; };
@@ -134,6 +143,9 @@
 		85B8BE4B285E3A27006163FF /* UICanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UICanvasView.swift; path = WireframeModel/UICanvasView.swift; sourceTree = SOURCE_ROOT; };
 		85B8BE4D285F31B1006163FF /* GestureControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GestureControl.swift; path = WireframeModel/GestureControl.swift; sourceTree = SOURCE_ROOT; };
 		85C761F0285D2E40001AF643 /* StructMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructMatrix.swift; sourceTree = "<group>"; };
+		85D18034285F7C0400B12504 /* Castle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Castle.txt; sourceTree = SOURCE_ROOT; };
+		85D18038285F894900B12504 /* Thing.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Thing.txt; sourceTree = SOURCE_ROOT; };
+		85D1803D285F8EA100B12504 /* Lol.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lol.txt; sourceTree = SOURCE_ROOT; };
 		85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StructMatrixTests.swift; path = WireframeModelTests/StructMatrixTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -229,9 +241,12 @@
 		8582B3BC285BA2B8000D3E37 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				85D1803D285F8EA100B12504 /* Lol.txt */,
+				85D18038285F894900B12504 /* Thing.txt */,
+				85D18034285F7C0400B12504 /* Castle.txt */,
 				8582B3C9285BC32C000D3E37 /* Plane.txt */,
 				8582B3D5285BC749000D3E37 /* Tetrahedron.txt */,
-				8582B3B8285B65D8000D3E37 /* Hemisphere.txt */,
+				8582B3B8285B65D8000D3E37 /* Volcano.txt */,
 				8582B3E1285BDD30000D3E37 /* Box.txt */,
 			);
 			path = Maps;
@@ -360,12 +375,15 @@
 				8582B3D6285BC749000D3E37 /* Tetrahedron.txt in Resources */,
 				8582B3C6285BBB35000D3E37 /* InvalidPoint.txt in Resources */,
 				8582B3DE285BDB71000D3E37 /* InvalidMap.txt in Resources */,
-				8582B3BB285BA25C000D3E37 /* Hemisphere.txt in Resources */,
+				8582B3BB285BA25C000D3E37 /* Volcano.txt in Resources */,
 				8582B3E8285BEC05000D3E37 /* InvalidNotRectMap.txt in Resources */,
+				85D18039285F894900B12504 /* Thing.txt in Resources */,
 				8582B391285B61E7000D3E37 /* LaunchScreen.storyboard in Resources */,
 				8582B38E285B61E7000D3E37 /* Assets.xcassets in Resources */,
 				8582B3E2285BDD30000D3E37 /* Box.txt in Resources */,
+				85D1803E285F8EA100B12504 /* Lol.txt in Resources */,
 				8582B38C285B61E7000D3E37 /* Main.storyboard in Resources */,
+				85D18035285F7C0400B12504 /* Castle.txt in Resources */,
 				8582B3C2285BB787000D3E37 /* OnlySpaces.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,15 +392,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D18036285F7C0400B12504 /* Castle.txt in Resources */,
 				8582B3E3285BDD30000D3E37 /* Box.txt in Resources */,
+				85D1803A285F894900B12504 /* Thing.txt in Resources */,
 				8582B3CB285BC32C000D3E37 /* Plane.txt in Resources */,
-				85D18032285F620000B12504 /* Hemisphere.txt in Resources */,
+				85D18032285F620000B12504 /* Volcano.txt in Resources */,
 				8582B3D7285BC749000D3E37 /* Tetrahedron.txt in Resources */,
 				8582B3DF285BDB71000D3E37 /* InvalidMap.txt in Resources */,
 				8582B3E9285BEC05000D3E37 /* InvalidNotRectMap.txt in Resources */,
 				8582B3C7285BBB35000D3E37 /* InvalidPoint.txt in Resources */,
 				8582B3DB285BD34A000D3E37 /* InvalidPlane.txt in Resources */,
 				8582B3BE285BB0A7000D3E37 /* FileEmpty.txt in Resources */,
+				85D1803F285F8EA100B12504 /* Lol.txt in Resources */,
 				8582B3C3285BB787000D3E37 /* OnlySpaces.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,15 +412,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D18037285F7C0400B12504 /* Castle.txt in Resources */,
 				8582B3CC285BC32C000D3E37 /* Plane.txt in Resources */,
+				85D1803B285F894900B12504 /* Thing.txt in Resources */,
 				8582B3E0285BDB71000D3E37 /* InvalidMap.txt in Resources */,
-				85D18033285F620100B12504 /* Hemisphere.txt in Resources */,
+				85D18033285F620100B12504 /* Volcano.txt in Resources */,
 				8582B3DC285BD34A000D3E37 /* InvalidPlane.txt in Resources */,
 				8582B3EA285BEC05000D3E37 /* InvalidNotRectMap.txt in Resources */,
 				85D18031285F61F600B12504 /* FileEmpty.txt in Resources */,
 				8582B3C8285BBB35000D3E37 /* InvalidPoint.txt in Resources */,
 				8582B3D8285BC749000D3E37 /* Tetrahedron.txt in Resources */,
 				8582B3E4285BDD30000D3E37 /* Box.txt in Resources */,
+				85D18040285F8EA100B12504 /* Lol.txt in Resources */,
 				8582B3C4285BB787000D3E37 /* OnlySpaces.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

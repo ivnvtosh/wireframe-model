@@ -15,8 +15,8 @@ struct Scene {
 
 	struct Angle {
 		var x: Float = -45
-		var y: Float =  15
-		var z: Float = -30
+		var y: Float =   0
+		var z: Float = -45
 	}
 
 	struct Offset {

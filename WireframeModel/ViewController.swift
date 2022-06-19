@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		let mapName = "Hemisphere"
+		let mapName = "Castle"
 		do {
 			let map = try Map(forResource: mapName)
 			scene = Scene(map: map, rect: self.view.bounds)

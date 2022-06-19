@@ -83,14 +83,14 @@ extension ViewController {
 			return
 		}
 
-		scene.zoom += Float(sender.velocity / 2)
+		scene.scale += Float(sender.velocity / 2)
 
-		if scene.zoom >= 100 {
-			scene.zoom = 100
+		if scene.scale >= 100 {
+			scene.scale = 100
 		}
 
-		if scene.zoom <= 10 {
-			scene.zoom = 10
+		if scene.scale <= 10 {
+			scene.scale = 10
 		}
 
 		dataDisplay(scale: labelScale)
@@ -121,7 +121,7 @@ extension ViewController {
 		scene.offset.x = Float(view.bounds.width  / 2)
 		scene.offset.y = Float(view.bounds.height / 2)
 
-		scene.zoom = 15
+		scene.scale = 15
 
 		dataDisplay(angle: labelAngle, offset: labelOffset, scale: labelScale)
 		canvas.setNeedsDisplay()

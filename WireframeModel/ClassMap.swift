@@ -9,38 +9,31 @@ import Foundation
 
 class Map {
 
-//	let height: [[Int]]
-//	let size:   Size
-
-	var height: [[Int]] = [[Int]]()
-	var size:   Size = Size(x: 0, y: 0, z: 0)
+	var height: [[Int]]!
+	var size:   Size!
 
 	enum MapError: Error {
 		case fileNotFound
 		case fileEmpty
 		case invalidMap
 		case somethingWrong
-
 	}
 
 	struct Size {
 		let x: Int
 		let y: Int
 		let z: Int
-
 	}
 
 	init(forResource: String) throws {
-		let height = try parseMap(forResource: forResource)
-		let size = calculate(height)
-
-		self.height = height
-		self.size = size
+		self.height = try parseMap(forResource: forResource)
+		self.size = calculate(height)
 	}
 
 	init() {
 		
 	}
+
 
 }
 

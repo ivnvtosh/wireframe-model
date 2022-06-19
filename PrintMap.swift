@@ -51,16 +51,14 @@ extension Map {
 		}
 		
 		Swift.print(message)
-
 	}
 
 	func printSize() {
 		Swift.print("size.x:", self.size.x)
 		Swift.print("size.y:", self.size.y)
 		Swift.print("size.z:", self.size.z)
-
 	}
 
-}
 
+}
 

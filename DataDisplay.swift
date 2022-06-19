@@ -34,7 +34,7 @@ extension ViewController {
 	func dataDisplay(scale label: UILabel) {
 		var text: String
 
-		text = "scale: \(String(round(scene.zoom * 10) / 10))"
+		text = "scale: \(String(round(scene.scale * 10) / 10))"
 
 		label.text = text
 		self.view.addSubview(label)

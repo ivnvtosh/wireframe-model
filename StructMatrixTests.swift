@@ -89,10 +89,10 @@ final class MatrixTests: XCTestCase {
 
 	func testRotateXYZ() {
 		var a = Matrix()
-		let b = Matrix(matrix: matrix_float4x4([simd_float4(      0.75,   0.649519,   -0.125, 0),
-												simd_float4(-0.4330127,      0.625, 0.649519, 0),
-												simd_float4(       0.5, -0.4330127,     0.75, 0),
-												simd_float4(         0,          0,        0, 1)]))
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(     0.625,     0.649519, -0.4330127, 0),
+												simd_float4(-0.4330127,         0.75,        0.5, 0),
+												simd_float4(  0.649519, -0.124999985,       0.75, 0),
+												simd_float4(         0,            0,          0, 1)]))
 
 		a.rotate(x: 30, y: 30, z: 30)
 		XCTAssertEqual(a, b)
@@ -100,10 +100,10 @@ final class MatrixTests: XCTestCase {
 
 	func testRotateAngle() {
 		var a = Matrix()
-		let b = Matrix(matrix: matrix_float4x4([simd_float4(      0.75,   0.649519,   -0.125, 0),
-												simd_float4(-0.4330127,      0.625, 0.649519, 0),
-												simd_float4(       0.5, -0.4330127,     0.75, 0),
-												simd_float4(         0,          0,        0, 1)]))
+		let b = Matrix(matrix: matrix_float4x4([simd_float4(     0.625,     0.649519, -0.4330127, 0),
+												simd_float4(-0.4330127,         0.75,        0.5, 0),
+												simd_float4(  0.649519, -0.124999985,       0.75, 0),
+												simd_float4(         0,            0,          0, 1)]))
 		let angle = Scene.Angle(x: 30, y: 30, z: 30)
 
 		a.rotate(angle: angle)

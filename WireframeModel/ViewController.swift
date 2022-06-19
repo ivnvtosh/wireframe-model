@@ -19,17 +19,13 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 
 		let mapName = "Hemisphere"
-		let map: Map
 		do {
-			map = try Map(forResource: mapName)
+			let map = try Map(forResource: mapName)
+			scene = Scene(map: map, rect: self.view.bounds)
 		} catch let error {
 			print(error: error as! Map.MapError, mapName: mapName)
 			return
 		}
-		map.printHeight()
-		map.printSize()
-
-		scene = Scene(map: map, rect: self.view.bounds)
 
 		canvas = UICanvasView(frame: self.view.bounds)
 		self.view.addSubview(canvas)

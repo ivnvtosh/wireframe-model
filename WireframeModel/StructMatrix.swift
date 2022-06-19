@@ -15,37 +15,31 @@ struct Matrix {
 	mutating func multiply(matrix: matrix_float4x4) {
 		self.matrix = simd.simd_mul(self.matrix, matrix)
 	}
-	
+
 	mutating func rotate(x angle: Float) {
 		let a: Float = Float.pi / 180 * angle;
-
 		let matrix = matrix_float4x4([simd_float4(1,       0,      0, 0),
 									  simd_float4(0,  cos(a), sin(a), 0),
 									  simd_float4(0, -sin(a), cos(a), 0),
 									  simd_float4(0,       0,      0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
 	mutating func rotate(y angle: Float) {
 		let a: Float = Float.pi / 180 * angle;
-
 		let matrix = matrix_float4x4([simd_float4(cos(a), 0, -sin(a), 0),
 									  simd_float4(     0, 1,       0, 0),
 									  simd_float4(sin(a), 0,  cos(a), 0),
 									  simd_float4(     0, 0,       0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
 	mutating func rotate(z angle: Float) {
 		let a: Float = Float.pi / 180 * angle;
-
 		let matrix = matrix_float4x4([simd_float4( cos(a), sin(a), 0, 0),
 									  simd_float4(-sin(a), cos(a), 0, 0),
 									  simd_float4(      0,      0, 1, 0),
 									  simd_float4(      0,      0, 0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -79,7 +73,6 @@ struct Matrix {
 									  simd_float4( 0, 1, 0, 0),
 									  simd_float4( 0, 0, 1, 0),
 									  simd_float4( 0, 0, 0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -88,7 +81,6 @@ struct Matrix {
 									  simd_float4(0, sy, 0, 0),
 									  simd_float4(0,  0, 1, 0),
 									  simd_float4(0,  0, 0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -97,7 +89,6 @@ struct Matrix {
 									  simd_float4(0, 1,  0, 0),
 									  simd_float4(0, 0, sz, 0),
 									  simd_float4(0, 0,  0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -106,7 +97,6 @@ struct Matrix {
 									  simd_float4( 0, sy, 0, 0),
 									  simd_float4( 0,  0, 1, 0),
 									  simd_float4( 0,  0, 0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -115,7 +105,6 @@ struct Matrix {
 									  simd_float4( 0, 1,  0, 0),
 									  simd_float4( 0, 0, sz, 0),
 									  simd_float4( 0, 0,  0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -124,7 +113,6 @@ struct Matrix {
 									  simd_float4(0, sy,  0, 0),
 									  simd_float4(0,  0, sz, 0),
 									  simd_float4(0,  0,  0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -133,7 +121,6 @@ struct Matrix {
 									  simd_float4( 0, sy,  0, 0),
 									  simd_float4( 0,  0, sz, 0),
 									  simd_float4( 0,  0,  0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -146,7 +133,6 @@ struct Matrix {
 									  simd_float4(0, 1, 0, 0),
 									  simd_float4(0, 0, 1, 0),
 									  simd_float4(0, 0, 0, s)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -155,7 +141,6 @@ struct Matrix {
 									  simd_float4( 0, 1, 0, 0),
 									  simd_float4( 0, 0, 1, 0),
 									  simd_float4(dx, 0, 0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -164,7 +149,6 @@ struct Matrix {
 									  simd_float4(0,  1, 0, 0),
 									  simd_float4(0,  0, 1, 0),
 									  simd_float4(0, dy, 0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -173,7 +157,6 @@ struct Matrix {
 									  simd_float4(0, 1,  0, 0),
 									  simd_float4(0, 0,  1, 0),
 									  simd_float4(0, 0, dz, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -182,7 +165,6 @@ struct Matrix {
 									  simd_float4( 0,  1, 0, 0),
 									  simd_float4( 0,  0, 1, 0),
 									  simd_float4(dx, dy, 0, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -191,7 +173,6 @@ struct Matrix {
 									  simd_float4( 0, 1,  0, 0),
 									  simd_float4( 0, 0,  1, 0),
 									  simd_float4(dx, 0, dz, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -200,7 +181,6 @@ struct Matrix {
 									  simd_float4(0,  1,  0, 0),
 									  simd_float4(0,  0,  1, 0),
 									  simd_float4(0, dy, dz, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -209,7 +189,6 @@ struct Matrix {
 									  simd_float4( 0,  1,  0, 0),
 									  simd_float4( 0,  0,  1, 0),
 									  simd_float4(dx, dy, dz, 1)])
-
 		multiply(matrix: matrix)
 	}
 
@@ -221,22 +200,22 @@ struct Matrix {
 		return self.matrix[y - 1][x - 1]
 	}
 
-	init() {
-		self.matrix = matrix_float4x4([simd_float4(1, 0, 0, 0),
-									   simd_float4(0, 1, 0, 0),
-									   simd_float4(0, 0, 1, 0),
-									   simd_float4(0, 0, 0, 1)])
+	init(scene: Scene) {
+		self.init()
+		transfer(offset: scene.offset)
+		scale(s: scene.scale)
+		rotate(angle: scene.angle)
 	}
 
 	init(matrix: matrix_float4x4) {
 		self.matrix = matrix
 	}
 
-	init(scene: Scene) {
-		self.init()
-		transfer(offset: scene.offset)
-		scale(s: scene.zoom)
-		rotate(angle: scene.angle)
+	init() {
+		self.matrix = matrix_float4x4([simd_float4(1, 0, 0, 0),
+									   simd_float4(0, 1, 0, 0),
+									   simd_float4(0, 0, 1, 0),
+									   simd_float4(0, 0, 0, 1)])
 	}
 
 

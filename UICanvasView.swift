@@ -12,7 +12,6 @@ class UICanvasView: UIView {
 	private func drawBackground(_ rect: CGRect) {
 		let path = UIBezierPath(rect: CGRect(x: 0, y: 0,
 											 width: rect.width, height: rect.height))
-
 		UIColor.systemBackground.setFill()
 		path.fill()
 		path.close()
@@ -48,7 +47,6 @@ class UICanvasView: UIView {
 		path.move(to: newStart)
 		path.addLine(to: newEnd)
 		path.close()
-
 	}
 
 	private func setUIColor() {
@@ -85,7 +83,6 @@ class UICanvasView: UIView {
 
 		setUIColor()
 		path.stroke()
-
 	}
 
 	override func draw(_ rect: CGRect) {

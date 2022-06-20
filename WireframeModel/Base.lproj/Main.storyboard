@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d9f-9D-zRQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,31 +8,70 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="AOX-9A-YxM">
+        <!--Wireframe Models-->
+        <scene sceneID="Tw6-1e-mRq">
             <objects>
-                <viewController id="W6P-QR-qow" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3cc-Wh-QbE">
+                <tableViewController id="fKK-9V-5cM" customClass="TableViewController" customModule="WireframeModel" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Zpr-F5-7Ft">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="qJu-oY-5kK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a6j-lr-sq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="jz0-Gu-nHs">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jz0-Gu-nHs" id="6Qp-W1-7DS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fKK-9V-5cM" id="hr1-7c-noz"/>
+                            <outlet property="delegate" destination="fKK-9V-5cM" id="GPD-bv-ePw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Wireframe Models" id="Y4Q-ll-wZc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="412-FV-d8q">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="pbH-DT-wUp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="HCy-M6-JJW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLC-sL-OMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-839" y="55"/>
+            <point key="canvasLocation" x="-320.28985507246381" y="54.910714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JUU-Oq-4Hi">
+            <objects>
+                <navigationController id="d9f-9D-zRQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XJJ-EF-j4f">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fKK-9V-5cM" kind="relationship" relationship="rootViewController" id="Qy0-Ym-Bhy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Icz-ah-htB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1212" y="55"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WireframeModel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="WireframeModel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIa-3e-pzt">
-                                <rect key="frame" x="93" y="44" width="228" height="21"/>
+                                <rect key="frame" x="93" y="88" width="228" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="crQ-IG-NE4"/>
                                 </constraints>
@@ -41,7 +80,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjI-cI-1I9">
-                                <rect key="frame" x="93" y="102" width="228" height="21"/>
+                                <rect key="frame" x="93" y="146" width="228" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="lbW-fG-L9o"/>
                                 </constraints>
@@ -50,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfT-If-BiI">
-                                <rect key="frame" x="93" y="73" width="228" height="21"/>
+                                <rect key="frame" x="93" y="117" width="228" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="e7e-Ei-K22"/>
                                 </constraints>
@@ -62,14 +101,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OjI-cI-1I9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1rZ-s7-Ryu"/>
-                            <constraint firstItem="eIa-3e-pzt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NzZ-TB-zGH"/>
-                            <constraint firstItem="eIa-3e-pzt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Wc6-GH-5b6"/>
-                            <constraint firstItem="HfT-If-BiI" firstAttribute="top" secondItem="eIa-3e-pzt" secondAttribute="bottom" constant="8" symbolic="YES" id="dQE-CA-6VR"/>
-                            <constraint firstItem="HfT-If-BiI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="n4P-Wa-Cg4"/>
-                            <constraint firstItem="OjI-cI-1I9" firstAttribute="top" secondItem="HfT-If-BiI" secondAttribute="bottom" constant="8" symbolic="YES" id="zeW-WI-asR"/>
+                            <constraint firstItem="eIa-3e-pzt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N8v-o9-Wfl"/>
+                            <constraint firstItem="eIa-3e-pzt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UI8-6v-Ez8"/>
+                            <constraint firstItem="OjI-cI-1I9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WmQ-w2-hn9"/>
+                            <constraint firstItem="HfT-If-BiI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XcV-bf-bKD"/>
+                            <constraint firstItem="OjI-cI-1I9" firstAttribute="top" secondItem="HfT-If-BiI" secondAttribute="bottom" constant="8" symbolic="YES" id="jsU-4d-C9K"/>
+                            <constraint firstItem="HfT-If-BiI" firstAttribute="top" secondItem="eIa-3e-pzt" secondAttribute="bottom" constant="8" symbolic="YES" id="kTB-lZ-CMt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="msQ-1s-9Tn"/>
                     <connections>
                         <outlet property="labelAngle" destination="eIa-3e-pzt" id="w2M-eM-iKT"/>
                         <outlet property="labelOffset" destination="HfT-If-BiI" id="55p-PP-yTf"/>
@@ -78,9 +118,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.98550724637681" y="64.955357142857139"/>
+            <point key="canvasLocation" x="587" y="55"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pbH-DT-wUp"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -17,7 +17,6 @@ extension ViewController {
 		text += "z: \(String(round(scene.angle.z * 10) / 10))"
 
 		label.text = text
-		self.view.addSubview(label)
 	}
 
 	func dataDisplay(offset label: UILabel) {
@@ -28,7 +27,6 @@ extension ViewController {
 		text += "z: \(String(round(scene.offset.z)))"
 
 		label.text = text
-		self.view.addSubview(label)
 	}
 
 	func dataDisplay(scale label: UILabel) {
@@ -37,7 +35,6 @@ extension ViewController {
 		text = "scale: \(String(round(scene.scale * 10) / 10))"
 
 		label.text = text
-		self.view.addSubview(label)
 	}
 
 	func dataDisplay(angle: UILabel, offset: UILabel, scale: UILabel) {

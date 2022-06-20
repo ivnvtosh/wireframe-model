@@ -87,9 +87,6 @@
 		85D18039285F894900B12504 /* Thing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D18038285F894900B12504 /* Thing.txt */; };
 		85D1803A285F894900B12504 /* Thing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D18038285F894900B12504 /* Thing.txt */; };
 		85D1803B285F894900B12504 /* Thing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D18038285F894900B12504 /* Thing.txt */; };
-		85D1803E285F8EA100B12504 /* Lol.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D1803D285F8EA100B12504 /* Lol.txt */; };
-		85D1803F285F8EA100B12504 /* Lol.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D1803D285F8EA100B12504 /* Lol.txt */; };
-		85D18040285F8EA100B12504 /* Lol.txt in Resources */ = {isa = PBXBuildFile; fileRef = 85D1803D285F8EA100B12504 /* Lol.txt */; };
 		85E80DC0285E06DC00A9FAAC /* StructMatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -145,9 +142,8 @@
 		85B8BE4B285E3A27006163FF /* UICanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UICanvasView.swift; path = WireframeModel/UICanvasView.swift; sourceTree = SOURCE_ROOT; };
 		85B8BE4D285F31B1006163FF /* GestureControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GestureControl.swift; path = WireframeModel/GestureControl.swift; sourceTree = SOURCE_ROOT; };
 		85C761F0285D2E40001AF643 /* StructMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructMatrix.swift; sourceTree = "<group>"; };
-		85D18034285F7C0400B12504 /* Castle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Castle.txt; sourceTree = SOURCE_ROOT; };
-		85D18038285F894900B12504 /* Thing.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Thing.txt; sourceTree = SOURCE_ROOT; };
-		85D1803D285F8EA100B12504 /* Lol.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Lol.txt; sourceTree = SOURCE_ROOT; };
+		85D18034285F7C0400B12504 /* Castle.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = Castle.txt; path = Maps/Castle.txt; sourceTree = SOURCE_ROOT; };
+		85D18038285F894900B12504 /* Thing.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = Thing.txt; path = Maps/Thing.txt; sourceTree = SOURCE_ROOT; };
 		85E80DBF285E06DC00A9FAAC /* StructMatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StructMatrixTests.swift; path = WireframeModelTests/StructMatrixTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -244,7 +240,6 @@
 		8582B3BC285BA2B8000D3E37 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				85D1803D285F8EA100B12504 /* Lol.txt */,
 				85D18038285F894900B12504 /* Thing.txt */,
 				85D18034285F7C0400B12504 /* Castle.txt */,
 				8582B3C9285BC32C000D3E37 /* Plane.txt */,
@@ -384,7 +379,6 @@
 				8582B391285B61E7000D3E37 /* LaunchScreen.storyboard in Resources */,
 				8582B38E285B61E7000D3E37 /* Assets.xcassets in Resources */,
 				8582B3E2285BDD30000D3E37 /* Box.txt in Resources */,
-				85D1803E285F8EA100B12504 /* Lol.txt in Resources */,
 				8582B38C285B61E7000D3E37 /* Main.storyboard in Resources */,
 				85D18035285F7C0400B12504 /* Castle.txt in Resources */,
 				8582B3C2285BB787000D3E37 /* OnlySpaces.txt in Resources */,
@@ -406,7 +400,6 @@
 				8582B3C7285BBB35000D3E37 /* InvalidPoint.txt in Resources */,
 				8582B3DB285BD34A000D3E37 /* InvalidPlane.txt in Resources */,
 				8582B3BE285BB0A7000D3E37 /* FileEmpty.txt in Resources */,
-				85D1803F285F8EA100B12504 /* Lol.txt in Resources */,
 				8582B3C3285BB787000D3E37 /* OnlySpaces.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +419,6 @@
 				8582B3C8285BBB35000D3E37 /* InvalidPoint.txt in Resources */,
 				8582B3D8285BC749000D3E37 /* Tetrahedron.txt in Resources */,
 				8582B3E4285BDD30000D3E37 /* Box.txt in Resources */,
-				85D18040285F8EA100B12504 /* Lol.txt in Resources */,
 				8582B3C4285BB787000D3E37 /* OnlySpaces.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

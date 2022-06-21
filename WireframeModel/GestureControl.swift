@@ -10,23 +10,28 @@ import UIKit
 extension ViewController {
 
 	func gestureControl() {
-		let rotationXYRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.gestureControlOfRotationXY))
+		let rotationXYRecognizer = UIPanGestureRecognizer(target: self,
+														  action: #selector(self.gestureControlOfRotationXY))
 		rotationXYRecognizer.minimumNumberOfTouches = 1
 		rotationXYRecognizer.maximumNumberOfTouches = 1
 		view.addGestureRecognizer(rotationXYRecognizer)
 
-		let rotationZRecognizer = UIRotationGestureRecognizer(target: self, action: #selector(self.gestureControlOfRotationZ))
+		let rotationZRecognizer = UIRotationGestureRecognizer(target: self,
+															  action: #selector(self.gestureControlOfRotationZ))
 		view.addGestureRecognizer(rotationZRecognizer)
 
-		let scaleRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(self.gestureControlOfScale))
+		let scaleRecognizer = UIPinchGestureRecognizer(target: self,
+													   action: #selector(self.gestureControlOfScale))
 		view.addGestureRecognizer(scaleRecognizer)
 
-		let offsetRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.gestureControlOfOffset))
+		let offsetRecognizer = UIPanGestureRecognizer(target: self,
+													  action: #selector(self.gestureControlOfOffset))
 		offsetRecognizer.minimumNumberOfTouches = 2
 		offsetRecognizer.maximumNumberOfTouches = 2
 		view.addGestureRecognizer(offsetRecognizer)
 
-		let resetRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.gestureControlOfReset))
+		let resetRecognizer = UITapGestureRecognizer(target: self,
+													 action: #selector(self.gestureControlOfReset))
 		resetRecognizer.numberOfTapsRequired = 2
 		view.addGestureRecognizer(resetRecognizer)
 	}
@@ -115,7 +120,7 @@ extension ViewController {
 		}
 
 		scene.angle.x = -45
-		scene.angle.y =   0
+		scene.angle.y = 0
 		scene.angle.z = -45
 
 		scene.offset.x = 0
@@ -128,6 +133,4 @@ extension ViewController {
 		canvas.setNeedsDisplay()
 	}
 
-
 }
-

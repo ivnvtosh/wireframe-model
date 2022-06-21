@@ -15,7 +15,7 @@ extension Map {
 		}
 		return false
 	}
-	
+
 	func parseMap(forResource: String) throws -> [[Int]] {
 		guard let path = Bundle.main.path(forResource: forResource, ofType: "txt") else {
 			throw MapError.fileNotFound
@@ -34,7 +34,7 @@ extension Map {
 		if height.isEmpty {
 			throw MapError.fileEmpty
 		}
-		
+
 		if isMapPoint(height) == true {
 			throw MapError.invalidMap
 		}
@@ -104,6 +104,4 @@ extension Map {
 		return height
 	}
 
-
 }
-

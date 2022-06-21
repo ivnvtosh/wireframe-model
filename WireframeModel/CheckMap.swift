@@ -44,6 +44,4 @@ extension Map {
 		return true
 	}
 
-
 }
-

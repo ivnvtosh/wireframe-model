@@ -17,7 +17,9 @@ struct Matrix {
 	}
 
 	mutating func rotate(x angle: Float) {
-		let a: Float = Float.pi / 180 * angle;
+		let a: Float = Float.pi / 180 * angle
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(1,       0,      0, 0),
 									  simd_float4(0,  cos(a), sin(a), 0),
 									  simd_float4(0, -sin(a), cos(a), 0),
@@ -26,7 +28,9 @@ struct Matrix {
 	}
 
 	mutating func rotate(y angle: Float) {
-		let a: Float = Float.pi / 180 * angle;
+		let a: Float = Float.pi / 180 * angle
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(cos(a), 0, -sin(a), 0),
 									  simd_float4(     0, 1,       0, 0),
 									  simd_float4(sin(a), 0,  cos(a), 0),
@@ -35,7 +39,9 @@ struct Matrix {
 	}
 
 	mutating func rotate(z angle: Float) {
-		let a: Float = Float.pi / 180 * angle;
+		let a: Float = Float.pi / 180 * angle
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4( cos(a), sin(a), 0, 0),
 									  simd_float4(-sin(a), cos(a), 0, 0),
 									  simd_float4(      0,      0, 1, 0),
@@ -69,6 +75,8 @@ struct Matrix {
 	}
 
 	mutating func scale(sx: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(sx, 0, 0, 0),
 									  simd_float4( 0, 1, 0, 0),
 									  simd_float4( 0, 0, 1, 0),
@@ -77,6 +85,8 @@ struct Matrix {
 	}
 
 	mutating func scale(sy: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(1,  0, 0, 0),
 									  simd_float4(0, sy, 0, 0),
 									  simd_float4(0,  0, 1, 0),
@@ -85,6 +95,8 @@ struct Matrix {
 	}
 
 	mutating func scale(sz: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(1, 0,  0, 0),
 									  simd_float4(0, 1,  0, 0),
 									  simd_float4(0, 0, sz, 0),
@@ -93,6 +105,8 @@ struct Matrix {
 	}
 
 	mutating func scale(sx: Float, sy: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(sx,  0, 0, 0),
 									  simd_float4( 0, sy, 0, 0),
 									  simd_float4( 0,  0, 1, 0),
@@ -101,6 +115,8 @@ struct Matrix {
 	}
 
 	mutating func scale(sx: Float, sz: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(sx, 0,  0, 0),
 									  simd_float4( 0, 1,  0, 0),
 									  simd_float4( 0, 0, sz, 0),
@@ -109,6 +125,8 @@ struct Matrix {
 	}
 
 	mutating func scale(sy: Float, sz: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(1,  0,  0, 0),
 									  simd_float4(0, sy,  0, 0),
 									  simd_float4(0,  0, sz, 0),
@@ -117,6 +135,8 @@ struct Matrix {
 	}
 
 	mutating func scale(sx: Float, sy: Float, sz: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(sx,  0,  0, 0),
 									  simd_float4( 0, sy,  0, 0),
 									  simd_float4( 0,  0, sz, 0),
@@ -129,6 +149,8 @@ struct Matrix {
 	}
 
 	mutating func generalScale(s: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(1, 0, 0, 0),
 									  simd_float4(0, 1, 0, 0),
 									  simd_float4(0, 0, 1, 0),
@@ -137,6 +159,8 @@ struct Matrix {
 	}
 
 	mutating func transfer(dx: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4( 1, 0, 0, 0),
 									  simd_float4( 0, 1, 0, 0),
 									  simd_float4( 0, 0, 1, 0),
@@ -145,6 +169,8 @@ struct Matrix {
 	}
 
 	mutating func transfer(dy: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(1,  0, 0, 0),
 									  simd_float4(0,  1, 0, 0),
 									  simd_float4(0,  0, 1, 0),
@@ -153,6 +179,8 @@ struct Matrix {
 	}
 
 	mutating func transfer(dz: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(1, 0,  0, 0),
 									  simd_float4(0, 1,  0, 0),
 									  simd_float4(0, 0,  1, 0),
@@ -161,6 +189,8 @@ struct Matrix {
 	}
 
 	mutating func transfer(dx: Float, dy: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4( 1,  0, 0, 0),
 									  simd_float4( 0,  1, 0, 0),
 									  simd_float4( 0,  0, 1, 0),
@@ -169,6 +199,8 @@ struct Matrix {
 	}
 
 	mutating func transfer(dx: Float, dz: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4( 1, 0,  0, 0),
 									  simd_float4( 0, 1,  0, 0),
 									  simd_float4( 0, 0,  1, 0),
@@ -177,6 +209,8 @@ struct Matrix {
 	}
 
 	mutating func transfer(dy: Float, dz: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4(1,  0,  0, 0),
 									  simd_float4(0,  1,  0, 0),
 									  simd_float4(0,  0,  1, 0),
@@ -185,6 +219,8 @@ struct Matrix {
 	}
 
 	mutating func transfer(dx: Float, dy: Float, dz: Float) {
+
+		// swift-format-ignore
 		let matrix = matrix_float4x4([simd_float4( 1,  0,  0, 0),
 									  simd_float4( 0,  1,  0, 0),
 									  simd_float4( 0,  0,  1, 0),
@@ -221,7 +257,6 @@ struct Matrix {
 									   simd_float4(0, 0, 0, 1)])
 	}
 
-
 }
 
 extension Matrix: Equatable {
@@ -229,4 +264,3 @@ extension Matrix: Equatable {
 		return lhs.matrix == rhs.matrix
 	}
 }
-

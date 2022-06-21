@@ -4,6 +4,8 @@
 //
 //  Created by Anton Ivanov on 16.06.2022.
 //
+//  swift-format-ignore-file
+//
 
 import UIKit
 

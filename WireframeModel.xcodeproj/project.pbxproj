@@ -270,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8582B3AB285B61E8000D3E37 /* Build configuration list for PBXNativeTarget "WireframeModel" */;
 			buildPhases = (
+				8545E2C028622EE8008E31B4 /* ShellScript */,
 				8582B37D285B61E7000D3E37 /* Sources */,
 				8582B37E285B61E7000D3E37 /* Frameworks */,
 				8582B37F285B61E7000D3E37 /* Resources */,
@@ -424,6 +425,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8545E2C028622EE8008E31B4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswift-format lint WireframeModel/*.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8582B37D285B61E7000D3E37 /* Sources */ = {

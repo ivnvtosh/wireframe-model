@@ -10,7 +10,7 @@ import Foundation
 class Map {
 
 	var height: [[Int]]!
-	var size:   Size!
+	var size: Size!
 
 	enum MapError: Error {
 		case fileNotFound
@@ -34,6 +34,4 @@ class Map {
 		
 	}
 
-
 }
-

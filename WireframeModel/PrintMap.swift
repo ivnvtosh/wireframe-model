@@ -49,7 +49,7 @@ extension Map {
 			}
 			message += "\n"
 		}
-		
+
 		Swift.print(message)
 	}
 
@@ -59,6 +59,4 @@ extension Map {
 		Swift.print("size.z:", self.size.z)
 	}
 
-
 }
-

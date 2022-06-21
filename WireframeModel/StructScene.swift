@@ -34,7 +34,7 @@ struct Scene {
 	}
 
 	mutating func calculate(rect: CGRect) {
-		self.centerRect.x = Float(rect.width  / 2)
+		self.centerRect.x = Float(rect.width / 2)
 		self.centerRect.y = Float(rect.height / 2)
 	}
 
@@ -43,6 +43,4 @@ struct Scene {
 		self.mapName = "Castle"
 	}
 
-
 }
-

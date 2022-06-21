@@ -23,12 +23,12 @@ class UICanvasView: UIView {
 		let tempZ = CGFloat(Float(scene.map.height[Int(point.y)][Int(point.x)]) - scene.center.z)
 
 		var x: CGFloat
-		x =  CGFloat(matrix.a(1, 1)) * tempX
+		x = CGFloat(matrix.a(1, 1)) * tempX
 		x += CGFloat(matrix.a(1, 2)) * tempY
 		x += CGFloat(matrix.a(1, 3)) * tempZ
 
 		var y: CGFloat
-		y =  CGFloat(matrix.a(2, 1)) * tempX
+		y = CGFloat(matrix.a(2, 1)) * tempX
 		y += CGFloat(matrix.a(2, 2)) * tempY
 		y += CGFloat(matrix.a(2, 3)) * tempZ
 
@@ -42,7 +42,7 @@ class UICanvasView: UIView {
 
 	private func drawLine(path: UIBezierPath, matrix: Matrix, start: CGPoint, end: CGPoint) {
 		let newStart = calculate(point: start, matrix: matrix)
-		let newEnd   = calculate(point: end,   matrix: matrix)
+		let newEnd = calculate(point: end, matrix: matrix)
 
 		path.move(to: newStart)
 		path.addLine(to: newEnd)
@@ -93,6 +93,4 @@ class UICanvasView: UIView {
 		// An empty implementation adversely affects performance during animation.
 	}
 
-
 }
-

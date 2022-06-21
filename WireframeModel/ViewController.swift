@@ -11,9 +11,9 @@ class ViewController: UIViewController {
 
 	var canvas: UICanvasView!
 
-	@IBOutlet weak var labelAngle:  UILabel!
+	@IBOutlet weak var labelAngle: UILabel!
 	@IBOutlet weak var labelOffset: UILabel!
-	@IBOutlet weak var labelScale:  UILabel!
+	@IBOutlet weak var labelScale: UILabel!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 		}
 
 		scene.angle.x = -45
-		scene.angle.y =   0
+		scene.angle.y = 0
 		scene.angle.z = -45
 
 		scene.offset.x = 0
@@ -52,7 +52,8 @@ class ViewController: UIViewController {
 		// Do any additional setup after loading the view.
 	}
 
-	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+	override func viewWillTransition(to size: CGSize,
+									 with coordinator: UIViewControllerTransitionCoordinator) {
 		if UIDevice.current.orientation.isLandscape {
 			print("Landscape")
 			scene.offset.x = Float(size.width / 2)
@@ -66,6 +67,4 @@ class ViewController: UIViewController {
 		}
 	}
 
-
 }
-

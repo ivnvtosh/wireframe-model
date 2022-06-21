@@ -4,11 +4,13 @@
 //
 //  Created by Anton Ivanov on 20.06.2022.
 //
+//  swift-format-ignore-file
+//
 
 import UIKit
 
 class TableViewController: UITableViewController {
- 
+
 	public var models = ["Thing",
 						 "Castle",
 						 "Plane",

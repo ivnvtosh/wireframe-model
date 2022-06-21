@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d9f-9D-zRQ">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -31,13 +31,7 @@
                             <outlet property="delegate" destination="fKK-9V-5cM" id="GPD-bv-ePw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Wireframe Models" id="Y4Q-ll-wZc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="412-FV-d8q">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="pbH-DT-wUp"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Wireframe Models" id="Y4Q-ll-wZc"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" id="HCy-M6-JJW"/>
                     </connections>
@@ -121,9 +115,6 @@
             <point key="canvasLocation" x="587" y="55"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="HCy-M6-JJW"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

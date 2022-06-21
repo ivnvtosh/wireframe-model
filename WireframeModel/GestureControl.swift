@@ -41,8 +41,8 @@ extension ViewController {
 			return
 		}
 
-		scene.angle.y -= Float(sender.velocity(in: canvas).x) / 100
-		scene.angle.x += Float(sender.velocity(in: canvas).y) / 100
+		scene.angle.y += Float(sender.velocity(in: canvas).x) / 100
+		scene.angle.x -= Float(sender.velocity(in: canvas).y) / 100
 
 		if scene.angle.x > 360 {
 			scene.angle.x = -360
@@ -69,7 +69,7 @@ extension ViewController {
 			return
 		}
 
-		scene.angle.z -= Float(sender.velocity)
+		scene.angle.z += Float(sender.velocity)
 
 		if scene.angle.z > 360 {
 			scene.angle.z = -360
@@ -119,15 +119,7 @@ extension ViewController {
 			return
 		}
 
-		scene.angle.x = -45
-		scene.angle.y = 0
-		scene.angle.z = -45
-
-		scene.offset.x = 0
-		scene.offset.y = 0
-		scene.offset.z = 0
-
-		scene.scale = 15
+		scene.defaultSettings()
 
 		dataDisplay(angle: labelAngle, offset: labelOffset, scale: labelScale)
 		canvas.setNeedsDisplay()

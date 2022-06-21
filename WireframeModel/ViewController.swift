@@ -29,15 +29,7 @@ class ViewController: UIViewController {
 			return
 		}
 
-		scene.angle.x = -45
-		scene.angle.y = 0
-		scene.angle.z = -45
-
-		scene.offset.x = 0
-		scene.offset.y = 0
-		scene.offset.z = 0
-
-		scene.scale = 15
+		scene.defaultSettings()
 
 		canvas = UICanvasView(frame: view.bounds)
 		self.view.addSubview(canvas)

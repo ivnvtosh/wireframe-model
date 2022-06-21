@@ -71,7 +71,7 @@ struct Matrix {
 	}
 
 	mutating func rotate(angle: Scene.Vector3) {
-		rotate(x: angle.x, y: angle.y, z: angle.z)
+		rotate(x: -angle.x, y: -angle.y, z: -angle.z)
 	}
 
 	mutating func scale(sx: Float) {

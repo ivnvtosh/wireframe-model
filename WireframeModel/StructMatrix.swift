@@ -64,7 +64,7 @@ struct Matrix {
 		rotate(y: y)
 	}
 
-	mutating func rotate(angle: Scene.Angle) {
+	mutating func rotate(angle: Scene.Vector3) {
 		rotate(x: angle.x, y: angle.y, z: angle.z)
 	}
 
@@ -192,7 +192,7 @@ struct Matrix {
 		multiply(matrix: matrix)
 	}
 
-	mutating func transfer(offset: Scene.Offset) {
+	mutating func transfer(offset: Scene.Vector3) {
 		transfer(dx: offset.x, dy: offset.y, dz: offset.z)
 	}
 
@@ -202,7 +202,10 @@ struct Matrix {
 
 	init(scene: Scene) {
 		self.init()
-		transfer(offset: scene.offset)
+		let offset = Scene.Vector3(x: scene.centerRect.x + scene.offset.x,
+								   y: scene.centerRect.y + scene.offset.y,
+								   z: scene.centerRect.z + scene.offset.z)
+		transfer(offset: offset)
 		scale(s: scene.scale)
 		rotate(angle: scene.angle)
 	}

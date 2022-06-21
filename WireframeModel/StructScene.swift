@@ -15,29 +15,18 @@ struct Scene {
 
 	var mapName: String
 
-	struct Angle {
-		var x: Float = -45
-		var y: Float =   0
-		var z: Float = -45
-	}
-
-	struct Offset {
+	struct Vector3 {
 		var x: Float = 0
 		var y: Float = 0
 		var z: Float = 0
 	}
 
-	struct Center {
-		var x: Float = 0
-		var y: Float = 0
-		var z: Float = 0
-	}
+	var centerRect = Vector3()
+	var angle = Vector3()
+	var offset = Vector3()
+	var center = Vector3()
+	var scale: Float = 0
 
-	var angle = Angle()
-	var offset = Offset()
-	var center = Center()
-	var scale: Float = 15.0
-	
 	mutating func calculate(center: Map.Size) {
 		self.center.x = Float(map.size.x / 2)
 		self.center.y = Float(map.size.y / 2)
@@ -45,8 +34,8 @@ struct Scene {
 	}
 
 	mutating func calculate(rect: CGRect) {
-		self.offset.x = Float(rect.width  / 2)
-		self.offset.y = Float(rect.height / 2)
+		self.centerRect.x = Float(rect.width  / 2)
+		self.centerRect.y = Float(rect.height / 2)
 	}
 
 	init() {

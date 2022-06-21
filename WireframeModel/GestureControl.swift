@@ -118,8 +118,9 @@ extension ViewController {
 		scene.angle.y =   0
 		scene.angle.z = -45
 
-		scene.offset.x = Float(view.bounds.width  / 2)
-		scene.offset.y = Float(view.bounds.height / 2)
+		scene.offset.x = 0
+		scene.offset.y = 0
+		scene.offset.z = 0
 
 		scene.scale = 15
 

@@ -33,6 +33,10 @@ class ViewController: UIViewController {
 		scene.angle.y =   0
 		scene.angle.z = -45
 
+		scene.offset.x = 0
+		scene.offset.y = 0
+		scene.offset.z = 0
+
 		scene.scale = 15
 
 		canvas = UICanvasView(frame: view.bounds)
@@ -46,6 +50,20 @@ class ViewController: UIViewController {
 		gestureControl()
 
 		// Do any additional setup after loading the view.
+	}
+
+	override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+		if UIDevice.current.orientation.isLandscape {
+			print("Landscape")
+			scene.offset.x = Float(size.width / 2)
+			scene.offset.y = Float(size.height / 2)
+			canvas.setNeedsDisplay()
+		} else {
+			print("Portrait")
+			scene.offset.x = Float(size.width / 2)
+			scene.offset.y = Float(size.height / 2)
+			canvas.setNeedsDisplay()
+		}
 	}
 
 

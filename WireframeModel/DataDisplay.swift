@@ -22,9 +22,9 @@ extension ViewController {
 	func dataDisplay(offset label: UILabel) {
 		var text: String
 
-		text =  "x: \(String(round(scene.offset.x))) "
-		text += "y: \(String(round(scene.offset.y))) "
-		text += "z: \(String(round(scene.offset.z)))"
+		text =  "x: \(String( round(scene.offset.x))) "
+		text += "y: \(String(-round(scene.offset.y))) "
+		text += "z: \(String( round(scene.offset.z)))"
 
 		label.text = text
 	}

@@ -13,3 +13,4 @@ IOS App. This project is about representing a landscape as a 3D object in which 
 * Color
 * More maps
 * Fix rotate
+* Fix zoom

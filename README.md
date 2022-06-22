@@ -1,5 +1,7 @@
 # wireframe-model
 IOS App. This project is about representing a landscape as a 3D object in which all surfaces are outlined in lines.
 
-<img width="516" alt="Screenshot 2022-06-22 at 17 21 16" src="https://user-images.githubusercontent.com/87498837/175053798-a127159a-d66c-4d5c-a600-aa18e7880f8c.png">
-<img width="516" alt="Screenshot 2022-06-22 at 17 21 28" src="https://user-images.githubusercontent.com/87498837/175053828-f10207ef-bf38-4139-82c4-e5d60d65efdf.png">
+![New Project](https://user-images.githubusercontent.com/87498837/175066811-1fd7462d-40d8-4bb1-a5bc-705dc13c5c5d.png)
+
+## supporting Dark Mode
+![New Project](https://user-images.githubusercontent.com/87498837/175061697-b3feafa3-8d54-4ec6-ad77-01f12d6faf0c.png)

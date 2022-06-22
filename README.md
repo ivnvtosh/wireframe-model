@@ -18,3 +18,5 @@ IOS App. This project is about representing a landscape as a 3D object in which 
 * Fix rotate
 * Fix zoom
 * Fix readme
+* Add App icon
+* Language

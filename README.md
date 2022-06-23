@@ -3,9 +3,6 @@ IOS App. This project is about representing a landscape as a 3D object in which 
 
 ![New Project](https://user-images.githubusercontent.com/87498837/175180616-17874615-3367-4f85-adea-bd9163f07b59.png)
 
-## Supporting Light Mode
-![New Project](https://user-images.githubusercontent.com/87498837/175061697-b3feafa3-8d54-4ec6-ad77-01f12d6faf0c.png)
-
 ## Demo
 ![Demo](https://user-images.githubusercontent.com/87498837/175167283-2a992457-a564-42f9-b1e1-7a6756a925b0.gif)
 

@@ -15,7 +15,10 @@ class TableViewController: UITableViewController {
 						 "Castle",
 						 "Plane",
 						 "Tetrahedron",
-						 "Volcano"]
+						 "Volcano",
+						 "50-4",
+						 "Mars",
+						]
 
 	override func viewDidLoad() {
         super.viewDidLoad()

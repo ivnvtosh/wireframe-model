@@ -36,7 +36,7 @@ struct Scene {
 		offset.y = 0
 		offset.z = 0
 
-		scale = 20
+		scale = 5
 	}
 
 	mutating func calculate(center: Map.Size) {
